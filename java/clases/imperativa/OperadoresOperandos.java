@@ -42,5 +42,7 @@ public class OperadoresOperandos {
         System.out.println("El resultado es: " + resultadoOperadorTernario);
 
         final int ESTE_ES_UN_VALOR_CONSTANTE = 2;   // espacio en memoria, es valor constante, y por eso dice final al principio. Este valor en memoria no cambia más en todo el codigo
+
+        System.out.println((suma > resta)? "si" : "no");    // Puedo en el print directamente poner la operación
     }
 }

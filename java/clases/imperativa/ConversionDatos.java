@@ -15,7 +15,30 @@ public class ConversionDatos {
         int value1 = 5;
 
         //Contraccion o tambien denominado cast o casteo
-        int value2 = (int) 2.34f;
+        int value2 = (int) 2.34f;   // Es ineficiente en el programa en cuanto al tiempo de ejecución
+
+        // ********************************************************************************
+        String cantidad = "15";
+        String precio = "150.27";
+
+        int cantEntero = Integer.parseInt(cantidad);    // clase wraper.metodo(String)
+        double precioDouble = Double.parseDouble(precio);   // clase wraper.metodo(Double)
+
+        System.out.println("El precio total es: " + cantEntero * precioDouble);
+        // ********************************************************************************
+
+        // ********************************************************************************
+        // Para el caso contrario...  quiero pasar los enteros a string
+        int edad = 30;
+        double estatura = 1.67;
+
+        String edadString = String.valueOf(edad);   // clase wraper.metodo(string)
+        String estaturaString = String.valueOf(estatura);
+
+        System.out.println("Edad: " + edadString + " Estatura: " + estaturaString);
+        // ********************************************************************************
+
+
 
         //Implicita
         double value3 = 10 + 20.5d;
