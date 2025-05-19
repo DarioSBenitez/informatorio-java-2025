@@ -33,6 +33,5 @@ public class OrganizacionDeCodigo {
         cadenaDeCaracter = cadenaDeCaracter + " " + "Otra cadena";
         System.out.println(cadenaDeCaracter);
 
-
     }
 }
